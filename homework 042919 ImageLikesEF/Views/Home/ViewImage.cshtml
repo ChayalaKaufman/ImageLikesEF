@@ -1,0 +1,24 @@
+﻿@using ImageLikesEF.Data
+@model ViewImageViewModel
+<div class="row">
+    <div class="col-md-8 col-md-offset-2 well">
+        <h3>@Model.Image.Title</h3>
+        <br />
+        <img src="/images/uploads/@Model.Image.FileName" style="width: 700px;" />
+        <br />
+
+        <h3>Date Uploaded: @Model.Image.Date.ToLongDateString()</h3>
+        <div id="likes">
+            <h3>Likes: <span id="viewLikes">@Model.Image.Likes</span></h3>
+            <button id="like" disabled="@(Model.Like?true:false)" data-id="@Model.Image.Id">
+                Like
+                <span id="heart" class="glyphicon glyphicon-heart@(Model.Like?"":"-empty")"></span>
+            </button>
+        </div>
+
+    </div>
+</div>
+
+@section scripts{
+    <script src="/js/viewImage.js"></script>
+}

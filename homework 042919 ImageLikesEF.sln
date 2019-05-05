@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.28010.2016
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "homework 042919 ImageLikesEF", "homework 042919 ImageLikesEF\homework 042919 ImageLikesEF.csproj", "{0BA87793-A632-46C9-A9D9-CC68C7DE089A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImageLikesEF.Data", "ImageLikesEF.Data\ImageLikesEF.Data.csproj", "{0D4E2030-8E35-4E98-8F86-4785E1E05F3B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{0BA87793-A632-46C9-A9D9-CC68C7DE089A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0BA87793-A632-46C9-A9D9-CC68C7DE089A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0BA87793-A632-46C9-A9D9-CC68C7DE089A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0D4E2030-8E35-4E98-8F86-4785E1E05F3B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0D4E2030-8E35-4E98-8F86-4785E1E05F3B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0D4E2030-8E35-4E98-8F86-4785E1E05F3B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0D4E2030-8E35-4E98-8F86-4785E1E05F3B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
