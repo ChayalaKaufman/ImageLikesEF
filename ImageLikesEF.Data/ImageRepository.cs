@@ -18,9 +18,9 @@ namespace ImageLikesEF.Data
 
         public IEnumerable<Image> GetImages()
         {
-            using(var context = new ImageContext(_connectionString))
+            using (var context = new ImageContext(_connectionString))
             {
-                return context.Images.ToList();
+                return context.Images.OrderByDescending(i => i.Date).ToList();
             }
         }
 
@@ -41,7 +41,7 @@ namespace ImageLikesEF.Data
 
         public void SetLike(int id)
         {
-            using(var context = new ImageContext(_connectionString))
+            using (var context = new ImageContext(_connectionString))
             {
                 context.Database.ExecuteSqlCommand(
                     @"UPDATE Images
