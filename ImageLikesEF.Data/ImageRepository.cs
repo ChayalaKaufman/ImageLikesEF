@@ -48,10 +48,7 @@ namespace ImageLikesEF.Data
                     SET Likes = Likes + 1
                     WHERE id = @id",
                     new SqlParameter("@id", id));
-                //var image = context.Images.FirstOrDefault(i => i.Id == id);
-                //image.Likes += 1;
-                //context.SaveChanges();
-            }
+                }
         }
 
         public int GetLikes(int id)
